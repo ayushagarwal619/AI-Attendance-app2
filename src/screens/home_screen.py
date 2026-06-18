@@ -395,7 +395,7 @@ def home_screen():
     # ── CTA section ───────────────────────────────────────────────────────────
     st.markdown(_section("Get Started", "Try SmartAttend Today"),
                 unsafe_allow_html=True)
-    cta_l, cta_m, cta_r = st.columns([1.5, 1, 1, ][::1][:3] if False else [1.5, 1, 1, 1.5])
+    cta_l, cta_m, cta_r, _ = st.columns([1.5, 1, 1, ][::1][:3] if False else [1.5, 1, 1, 1.5])
     with cta_m:
         if st.button("Student Portal →", type="primary", use_container_width=True,
                      key="cta_student"):
